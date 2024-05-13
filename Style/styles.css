@@ -124,25 +124,12 @@ span {
 }
 
 .home-img img{
-    width: 25vw;
-    animation: floatImage 4s ease-in-out infinite;
+    width: 22.5vw;
     mix-blend-mode: multiply;
-    background-color: var(--snd-bg-color);
-    border-radius: 160px;
     margin-left: 6px;
 }
 
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2.4rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
 
 .home-content p {
     font-size: 1.6rem;

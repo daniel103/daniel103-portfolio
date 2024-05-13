@@ -93,15 +93,9 @@ let langs = document.querySelector("select"),
      portfolioH41 = document.getElementById("portfolio-h4-1"),
      portfolioH42 = document.getElementById("portfolio-h4-2"),
      portfolioH43 = document.getElementById("portfolio-h4-3"),
-     portfolioH44 = document.getElementById("portfolio-h4-4"),
-     portfolioH45 = document.getElementById("portfolio-h4-5"),
-     portfolioH46 = document.getElementById("portfolio-h4-6"),
      portfolioP1 = document.getElementById("portfolio-p-1"),
      portfolioP2 = document.getElementById("portfolio-p-2"),
      portfolioP3 = document.getElementById("portfolio-p-3"),
-     portfolioP4 = document.getElementById("portfolio-p-4"),
-     portfolioP5 = document.getElementById("portfolio-p-5"),
-     portfolioP6 = document.getElementById("portfolio-p-6"),
      contactH2 = document.getElementById("contact-h2"),
      contactBtn = document.getElementById("contact-btn");
 
@@ -145,12 +139,6 @@ const setLanguage = (language) => {
         portfolioP2.innerHTML = data.hebrew.portfolioP2;
         portfolioH43.innerHTML = data.hebrew.portfolioH43;
         portfolioP3.innerHTML = data.hebrew.portfolioP3;
-        portfolioH44.innerHTML = data.hebrew.portfolioH44;
-        portfolioP4.innerHTML = data.hebrew.portfolioP4;
-        portfolioH45.innerHTML = data.hebrew.portfolioH45;
-        portfolioP5.innerHTML = data.hebrew.portfolioP5;
-        portfolioH46.innerHTML = data.hebrew.portfolioH46;
-        portfolioP6.innerHTML = data.hebrew.portfolioP6;
         contactH2.innerHTML = data.hebrew.contactH2;
         contactBtn.innerHTML = data.hebrew.contactBtn;
     }else if (language == "en") {
@@ -188,12 +176,6 @@ const setLanguage = (language) => {
         portfolioP2.innerHTML = data.english.portfolioP2;
         portfolioH43.innerHTML = data.english.portfolioH43;
         portfolioP3.innerHTML = data.english.portfolioP3;
-        portfolioH44.innerHTML = data.english.portfolioH44;
-        portfolioP4.innerHTML = data.english.portfolioP4;
-        portfolioH45.innerHTML = data.english.portfolioH45;
-        portfolioP5.innerHTML = data.english.portfolioP5;
-        portfolioH46.innerHTML = data.english.portfolioH46;
-        portfolioP6.innerHTML = data.english.portfolioP6;
         contactH2.innerHTML = data.english.contactH2;
         contactBtn.innerHTML = data.english.contactBtn;
     }
@@ -238,12 +220,6 @@ let data = {
         portfolioP2: "מערכת לתיאום אימונים לשרון פיטנס",
         portfolioH43: "דף הנצחה",
         portfolioP3: "עמוד להנצחת משפחות החיילים ולתרומות",
-        portfolioH44: "רשימת מטלות",
-        portfolioP4: "אפליקציה לניהול משימות",
-        portfolioH45: "משחק זיכרון",
-        portfolioP5: "משחק זיכרון לאטרקציה אינטרנטית",
-        portfolioH46: "API של נאסא",
-        portfolioP6: "מערכת להצגת נתונים מנאסא בזמן אמת",
         contactH2: "צור איתי קשר!",
         contactBtn: "שלח לי",
     },
@@ -282,12 +258,6 @@ let data = {
          portfolioP2: "A system for scheduling workouts for Sharon Fitness",
          portfolioH43: "Commemorative page",
          portfolioP3: "A page for commemorating the soldiers' families and for donations",
-         portfolioH44: "To do list",
-         portfolioP4: "A task management application",
-         portfolioH45: "Memory game",
-         portfolioP5: "A memory game for an internet attraction",
-         portfolioH46: "NASA API",
-         portfolioP6: "A system for displaying data from NASA in real time",
          contactH2: "Contact Me!",
         contactBtn: "Send Message",
     }
