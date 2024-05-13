@@ -105,7 +105,8 @@ langs.addEventListener("change", (event) => {
 
 const setLanguage = (language) => {
     if (language == "he") {
-        document.body.setAttribute('dir', 'rtl')
+        document.body.setAttribute('dir', 'rtl');
+        document.getElementById("menu").style.textAlign = "end";
         menuHome.innerHTML = data.hebrew.menuHome;
         menuAbout.innerHTML = data.hebrew.menuAbout;
         menuServices.innerHTML = data.hebrew.menuServices;
@@ -142,7 +143,8 @@ const setLanguage = (language) => {
         contactH2.innerHTML = data.hebrew.contactH2;
         contactBtn.innerHTML = data.hebrew.contactBtn;
     }else if (language == "en") {
-        document.body.setAttribute('dir', 'ltr')
+        document.body.setAttribute('dir', 'ltr');
+        document.getElementById("menu").style.textAlign = "start";
         menuHome.innerHTML = data.english.menuHome;
         menuAbout.innerHTML = data.english.menuAbout;
         menuServices.innerHTML = data.english.menuServices;
