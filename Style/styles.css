@@ -588,36 +588,36 @@ span {
 }
 
 .sticky-button {
-    position: fixed;  /* Fixes the button in a specific position */
-    right: 20px;      /* Distance from the right */
+    position: fixed; 
+    right: 20px;     
     padding: 13px 18px;
-    color: #fff;  /* Text color */
-    border: none;  /* Remove border */
-    border-radius: 50%;  /* Rounded corners */
-    text-decoration: none;  /* Remove underline */
+    color: #fff;  
+    border: none; 
+    border-radius: 50%;  
+    text-decoration: none;
     font-size: 2.4rem;
-    cursor: pointer;  /* Pointer on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Button shadow */
-    z-index: 1000;  /* Ensures button stays on top of other content */
-    transition: background-color 0.3s;  /* Smooth color transition */
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
 }
 
 .whatsapp-button {
-    bottom: 88px;  /* Position from the bottom for the WhatsApp button */
-    background-color: #49E670;;  /* Green WhatsApp button color */
+    bottom: 88px;  
+    background-color: #49E670;
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebd57;  /* Hover color for WhatsApp */
+    background-color: #1ebd57;
 }
 
 .call-button {
-    bottom: 20px;  /* Position from the bottom for the Call button */
-    background-color: #03E78B;  /* Green button color for call */
+    bottom: 20px; 
+    background-color: #03E78B;
 }
 
 .call-button:hover {
-    background-color: #218838;  /* Hover color for call */
+    background-color: #218838;
 }
 /*BREAKPOINT*/
 
@@ -842,10 +842,6 @@ span {
     #contact-h21 {
         font-size: 29px;
     }
-    #contact-p {
-        margin-right: 9.5%;
-    }
-
 }
 
 @media (max-width: 450px) {
