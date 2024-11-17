@@ -37,7 +37,7 @@ section {
     position: relative;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 16rem 7.6rem 16rem 7.6rem;
+    padding: 16rem 7.7rem 16rem 7.7rem;
     /* padding: 15rem 5% 10rem 5%; */
 }
 
@@ -698,7 +698,7 @@ span {
 
 #NagishLiTrigger {
  
-    top: 88.6%;
+    top: 89%;
     bottom: 20px;
     /* top:10px; */
     right: none;
@@ -719,7 +719,7 @@ span {
 @media (max-width: 991px) {
     .home {
         background-position: center !important;
-        height: 90vh;
+        height: 75vh;
     }
     .header {
         padding: 2rem 3%;
