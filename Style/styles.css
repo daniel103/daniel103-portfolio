@@ -719,7 +719,7 @@ span {
 @media (max-width: 991px) {
     .home {
         background-position: center !important;
-        height: 75vh;
+        height: 80vh;
     }
     .header {
         padding: 2rem 3%;
