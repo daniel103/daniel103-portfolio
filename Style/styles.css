@@ -27,11 +27,18 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
      direction: rtl;
+     margin: 0;
 }
 
 section {
+    margin-left: auto !important;
+    margin-right: auto !important;
     min-height: 100vh;
-    padding: 6.5rem 4% 2rem;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 16rem 7.6rem 16rem 7.6rem;
+    /* padding: 15rem 5% 10rem 5%; */
 }
 
 .header {
@@ -50,22 +57,20 @@ section {
 
 }
 
-#header-h3 {
-    color: var(--bg-color);
-}
+
 
 #header-btn {
-margin-top: 0;
-position: absolute;
-    margin-left: 78%;
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-    font-weight: 700;
-    transition: .5s ease;
-    color: var(--main-color);
+    margin-top: 0;
+    position: absolute;
+        margin-left: 78%;
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        border-radius: 4rem;
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+        font-weight: 700;
+        transition: .5s ease;
+        color: var(--main-color);
 }
 
 .header.sticky {
@@ -95,20 +100,39 @@ position: absolute;
 }
  
 #header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 60px;
-    font-weight: 700;
+    font-family: "Assistant", assistant;
+    font-size: 62px;
+    font-weight: 800;
+}
+
+.header-p-title {
+    font-size: 58px;
+    font-family: "Assistant", assistant;
+    font-weight: 400;
+    padding: 0 8px;
+    opacity: 1;
 }
 #header-name{
+    color: var(--text-color);
+    font-family: "Assistant", assistant;
     font-size: 52px;
-    font-weight: 600;
+    font-weight: 500;
     mix-blend-mode: luminosity;
 }
 
+
 #header-h3 {
+    color: var(--main-color);
+    font-family: "Assistant", assistant;
     font-size: 28px;
     font-weight: 800;
 }
+
 
 .header-p {
     font-size: 20px;
@@ -133,6 +157,7 @@ position: absolute;
 }
 
 
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -146,12 +171,12 @@ position: absolute;
 }
 
 .home {
-    background-image: url("../img//background-cover.jpg");
+    background-image: url("../img/cover.png");
     background-size: cover;
 }
 
 .home-content {
- 
+    z-index: 5;
     text-align: center;
     margin-left: 3.5px;
 }
@@ -177,6 +202,7 @@ span {
 }
 
 .home-img img{
+    background-position: 40px 0;
     width: 22.5vw;
     mix-blend-mode: multiply;
     margin-left: 6px;
@@ -184,8 +210,13 @@ span {
 
 
 
-.home-content p {
-    font-size: 1.6rem;
+.home-content-p {
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Assistant", assistant;
+    font-size: 22px;
+    font-weight: 500;
+
 }
 
 .social-media { 
@@ -214,12 +245,12 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
+.btn {  
+    background-color: var(--main-color);
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--bg-color);
     font-size: 1.6rem;
     color: var(--bg-color);
     letter-spacing: .1rem;
@@ -237,7 +268,8 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
+    padding: 60px 0px 60px 0px;
 }
 
 .about-img img {
@@ -270,8 +302,12 @@ span {
 }
 
 .elementor {
-    padding: 0px 70px 0px 70px;
-    box-sizing: border-box;
+    text-align: center;
+    color: var(--e-global-color-accent);
+    font-family: "Assistant", assistant;
+    font-size: 20px;
+    font-weight: 500;
+     padding: 0px 150px 0px 150px;
 }
 
 #about-logo{
@@ -282,24 +318,46 @@ span {
 }
 
 .services h2 {
-    margin-bottom: 5rem;
+    font-size: 48px;
+    position: relative;
+    margin: 0 auto 80px;
+    color: var(--main-color);
+    width: 48vw;
 }
 
 .services-container {
+    gap: 0.6rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 3.2rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.services-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 30rem;
+    height: 40rem;
+    text-align: center;
+    background-color: var(--snd-bg-color);
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--snd-bg-color);
-    padding: 3.8rem 4.1rem 4.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+
+    padding: 5rem 5rem 5rem 5rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid var(--snd-bg-color);
     transition: .5s ease;
 }
 
@@ -309,18 +367,33 @@ span {
 }
 
 .services-box i {
-    font-size: 6.5rem;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 22px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 5rem;
     color: var(--main-color);
 }
 
 .services-box h3 {
+    line-height: 1.8;
+    text-transform: capitalize;
+    margin-bottom: 20px;
     font-size: 2.6rem;
-    margin-top: 11px;
+    color: var(--text-color);
+    font-weight: 800;
+
 }
 
 .services-box p {
+    color: #dde0ea;
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    margin: 1rem 0 2rem;
+
 }
 
 
@@ -338,6 +411,7 @@ span {
     align-items: center;
     gap: 3.5rem;
     padding: auto;
+    
 }
 
 .portfolio-container .portfolio-box {
@@ -361,6 +435,8 @@ span {
     width: 100%;
     transition: .5s ease;
     opacity: 0.8;
+    background-position: center;
+    object-fit: fill;
 }
 
 .portfolio-box:hover img {
@@ -619,7 +695,20 @@ span {
 .call-button:hover {
     background-color: #218838;
 }
-/*BREAKPOINT*/
+
+#NagishLiTrigger {
+ 
+    top: 88.6%;
+    bottom: 20px;
+    /* top:10px; */
+    right: none;
+    left: 1px;
+    transform: scale(0.8, 0.8);
+    overflow-y: hidden;
+    margin-inline-start: auto;
+}
+
+
 
 @media (max-width: 1200px) {
     html {
@@ -628,6 +717,10 @@ span {
 }
 
 @media (max-width: 991px) {
+    .home {
+        background-position: center !important;
+        height: 90vh;
+    }
     .header {
         padding: 2rem 3%;
     }
@@ -701,6 +794,8 @@ span {
 
     .about {
         flex-direction: column-reverse;
+        padding: 60px 0px 60px 0px;
+        background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
     }
 
     .about-img img{
@@ -709,7 +804,12 @@ span {
     }
 
     .services h2 {
-        margin-bottom: 3rem;
+        font-size: 28px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto 80px;
     }
 
     .portfolio h2 {
@@ -770,14 +870,20 @@ span {
             font-size: 30px;
             font-weight: 500;
         }
-        .home-content p {
+        .header-p-title {
+            font-size: 30px;
+            padding: 0 4px;
+        }
+        .home-content-p {
             font-size: 16px;
             font-weight: 500;
         }
+
         section {
             min-height: 55vh;
             padding: 5.5rem 2%;
         }
+ 
         #portfolio-p {
             width: 80%;
             margin-top: 10px;
@@ -798,18 +904,48 @@ span {
              padding: 0; 
         }
         .about-content p {
-            font-size: 16px;
-            font-weight: 400;
+            font-size: 15px;
+            font-weight: 500;
             text-align: center;
             margin: 2.5rem;
+            margin-block-start: 0;
+            margin-block-end: .9rem;
         }
         .heading {
             text-align: center;
             font-size: 38px;
             font-weight: bold;
         }
+        .elementor {
+            text-align: center;
+    color: var(--text-color);
+    font-family: "Assistant", assistant;
+    font-size: 16px;
+    padding: 30px 15px 30px 15px;
+    font-weight: 500;
+        }
         .services-container {
             padding: 10px;
+                 margin-right: 0; 
+    margin-left: 0;
+    margin-top: -65px;
+        }
+        .services-box {
+            position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 41rem;
+    height: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6rem;
+        background-color: var(--snd-bg-color);
+   
         }
         .services-box h3 {
             font-size: 28px;
@@ -826,7 +962,7 @@ span {
         padding: 0px 0px 0px 0px;
     }
     .portfolio-container .portfolio-box {
-        height: 265px;
+        height: 214px;
     }
 
     .portfolio-container {
@@ -837,7 +973,11 @@ span {
         width: 100%;
     }
     .portfolio-layer p {
-        font-weight: 500;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .portfolio-layer h4 {
+        font-size: 2.8rem;
     }
     #contact-h21 {
         font-size: 29px;
