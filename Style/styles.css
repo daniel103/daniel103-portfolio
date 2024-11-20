@@ -150,7 +150,7 @@ position: absolute;
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-color);
+    color: #ffdd43f3;
     bottom: -10px;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -297,12 +297,12 @@ span {
 .about-content p {
     font-size: 20px;
     font-weight: 500;
-    text-align: center;
+    text-align: start;
     margin: 2.5rem;
 }
 
 .elementor {
-    text-align: center;
+    text-align: start;
     color: var(--e-global-color-accent);
     font-family: "Assistant", assistant;
     font-size: 20px;
@@ -906,7 +906,7 @@ span {
         .about-content p {
             font-size: 15px;
             font-weight: 500;
-            text-align: center;
+            text-align: start;
             margin: 2.5rem;
             margin-block-start: 0;
             margin-block-end: .9rem;
