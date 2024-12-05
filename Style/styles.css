@@ -94,10 +94,10 @@ position: absolute;
 }
 
 #header-img {
-    width: 172px;
-    height: 148px;
-    margin-top: 6.8px;
-        margin-left: -308px;
+    width: 176px;
+    height: 156px;
+    margin-top: 6.2px;
+        margin-left: -299px;
 }
  
 #header-title {
@@ -848,10 +848,10 @@ span {
         font-weight: 700;
     }
     #header-img {
-        width: 134px;
-        height: 130px;
+        width: 135px;
+        height: 128px;
         margin-top: 8px;
-        margin-left: -296px;
+        margin-left: -300px;
     }
     #menu-icon {
         margin-left: 90%;
