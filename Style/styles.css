@@ -416,7 +416,7 @@ span {
 }
 
 .portfolio-container .portfolio-box {
-    height: 360px;
+    height: 328px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 0 1rem var(--bg-color);
