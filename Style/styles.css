@@ -806,7 +806,7 @@ span {
     .about {
         flex-direction: column-reverse;
         padding: 60px 0px 60px 0px;
-        background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
+   background-color: var(--snd-bg-color);
     }
 
     .about-img img{
