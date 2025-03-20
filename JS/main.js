@@ -51,3 +51,17 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 
+function sendEmail (){
+    const tamplateParams = {
+        fullname: document.querySelector("#fullname").value,
+        email: document.querySelector("#email").value,
+        phone: document.querySelector("#phone").value,
+        message: document.querySelector("#message").value
+    };
+
+
+emailjs.send("service_2t8hc71", "template_k8ibmcf", tamplateParams).then(() => {
+    window.location.href = "https://thankyoufordetils.netlify.app/"; // שנה ללינק של דף התודה
+})
+.catch(() => alert("שגיאה בשליחה"));
+}
