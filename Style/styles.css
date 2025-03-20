@@ -66,9 +66,9 @@ section {
         display: inline-block;
         padding: 1rem 2.8rem;
         border-radius: 4rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         letter-spacing: .1rem;
-        font-weight: 600;
+        font-weight: 700;
         transition: .5s ease;
         color: var(--main-color);
 }
@@ -104,6 +104,7 @@ position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: var(--main-color);
     align-items: center;
     text-align: center;
     font-family: "Assistant", assistant;
@@ -114,7 +115,8 @@ position: absolute;
 .header-p-title {
     font-size: 58px;
     font-family: "Assistant", assistant;
-    font-weight: 400;
+    font-weight: 800;
+    color: var(--text-color);
     padding: 0 8px;
     opacity: 1;
 }
@@ -217,7 +219,7 @@ span {
     font-family: "Assistant", assistant;
     font-size: 22px;
     font-weight: 500;
-
+    margin-top: 2.5px;
 }
 
 .social-media { 
@@ -269,7 +271,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
+    background-color: var(--snd-bg-color);
     padding: 60px 0px 60px 0px;
 }
 
