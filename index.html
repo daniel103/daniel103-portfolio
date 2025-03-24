@@ -278,15 +278,14 @@
             <h2 class="heading" id="contact-h21">מוכנים לקדם את העסק שלכם?</h2>
             <p id="contact-p">השאירו פרטים ונחזור אליכם בהקדם האפשרי</p><br/><br/>
 
-            <form action="https://formsubmit.co/danl3654321@gmail.com" method="POST">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="לקוח חדש מהאתר">
-                    <input type="hidden" name="_next" value="https://thankyoufordetils.netlify.app/">
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <div class="input-box">
+                    <input type="hidden" name="access_key" value="7eacc034-152e-482f-9022-ace6a6482131">
                     <input type="text" name="fullname" placeholder="שם מלא" pattern="(^[a-zA-Z]{1,30} [a-zA-Z]{1,30}$)|(^[א-ת]{1,30} [א-ת]{1,30}$)" required>
                     <input type="email" name="email" placeholder="מייל" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     <input type="text" name="phone" placeholder="טלפון" pattern="^\d{3}-\d{7}$|^\d{10}$" required>
                     <textarea class="textarea" name="message" rows="8" placeholder="הודעה"></textarea>
+                    <input type="hidden" name="redirect" value="https://thankyoufordetils.netlify.app">
                 </div> 
                 <input type="submit" class="btn" id="contact-btn">
             </form>
