@@ -303,7 +303,7 @@ span {
     text-align: center;
     line-height: 1.2;
     font-size: 46px;
-    margin-top: -30px;
+    margin-top: -5px;
 }
 
 
@@ -803,7 +803,7 @@ span {
     }
     .home-content {
         margin-left: 2px;
-        margin-top: -11px;
+        margin-top: -30px;
     }
     .home-content h3{
         font-size: 2.6rem;
@@ -887,7 +887,7 @@ span {
         margin-left: 90%;
     }
     .btn {
-        margin-top: 30px;
+        margin-top: 26px;
     }
     #header-btn {
     display: none;
@@ -896,25 +896,30 @@ span {
             position: sticky;  
         }
         #header-title {
-            font-size: 30px;
+            font-size: 80px;
         }
         #header-h3 {
             font-size: 22px;
         }
         #header-name {
-            font-size: 21px;
-        font-weight: 700;
-        margin-top: -2px;
+  display: none;
         }
         .header-p-title {
-            font-size: 30px;
+            font-size: 80px;
             padding: 0 4px;
         }
-        .home-content-p {
-            font-size: 17px;
-            font-weight: 500;
+        .home-content {
+            margin-left: 0px;
+            margin-top: -5px;
         }
-
+        .home-content-p {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0 41px;
+        }
+        #top-home {
+            margin-top: 17px;
+        }
         section {
             min-height: 55vh;
             padding: 5.5rem 2%;
@@ -928,7 +933,20 @@ span {
             text-align: center;
         }
         .about-content h2 {
-            font-size: 32px;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        #services-h2 {
+            margin-top: 6px;
+        }
+        .portfolio h2 {
+            margin-top: -2px;
+        }
+        #contact-h21 {
+            margin-top: 11px;
+        }
+        #contact-p {
+            font-size: 16px !important;
         }
         #about-logo {
             width: 44px;
@@ -949,8 +967,11 @@ span {
         }
         .heading {
             text-align: center;
-            font-size: 38px;
+            font-size: 28px;
             font-weight: bold;
+        }
+        #portfolio-span {
+            font-size: 28px;
         }
         .about-text{
             text-align: center;
@@ -1016,7 +1037,7 @@ span {
         font-size: 2.8rem;
     }
     #contact-h21 {
-        font-size: 29px;
+        font-size: 28px;
     }
 }
 
