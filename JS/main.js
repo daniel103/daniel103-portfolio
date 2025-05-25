@@ -35,6 +35,19 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.portfolio-container');
+    const items = container.querySelectorAll('.portfolio-box');
+
+    // הסר קלאס קודם אם היה (במקרה של ריספונסיביות או טעינה חוזרת)
+    items.forEach(item => item.classList.remove('center-last'));
+
+    if (items.length % 2 === 1) {
+      const lastItem = items[items.length - 1];
+      lastItem.classList.add('center-last');
+    }
+  });
+
 /*================================= scroll reveal ===================================*/
 ScrollReveal({
     //reset: true,
