@@ -814,6 +814,15 @@ span {
     background-color: #218838;
 }
 
+::placeholder {
+    color: var(--text-color);
+    opacity: 1; 
+  }
+
+::-ms-input-placeholder { 
+    color: var(--text-color);
+  }
+
 #NagishLiTrigger {
  
     top: 89%;
