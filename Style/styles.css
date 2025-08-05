@@ -179,8 +179,20 @@ position: absolute;
 }
 
 .home {
-    background-image: url("../img/cover.png");
+    background-image: url("../img/background.png");
     background-size: cover;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 55, 55, 0.503);
+    /* background-color: rgba(43, 41, 41, 0.645);  */
 }
 
 .home-content {
@@ -845,7 +857,7 @@ span {
 
 @media (max-width: 991px) {
     .home {
-        background-position: center !important;
+        background-position: left !important;
         height: 80vh;
     }
     .header {
