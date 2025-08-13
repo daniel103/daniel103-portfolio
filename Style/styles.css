@@ -58,7 +58,6 @@ section {
 }
 
 
-
 #header-btn {
     margin-top: 0;
     position: absolute;
@@ -72,10 +71,12 @@ section {
         transition: .5s ease;
         color: var(--main-color);
 }
+
 #btn-phone {
     transform: scaleX(-1);
     font-weight: 600;
 }
+
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -124,6 +125,7 @@ position: absolute;
     padding: 0 8px;
     opacity: 1;
 }
+
 #header-name{
     color: var(--text-color);
     font-family: "Assistant", assistant;
@@ -132,7 +134,6 @@ position: absolute;
     mix-blend-mode: luminosity;
 }
 
-
 #header-h3 {
     color: var(--main-color);
     font-family: "Assistant", assistant;
@@ -140,11 +141,11 @@ position: absolute;
     font-weight: 800;
 }
 
-
 .header-p {
     font-size: 20px;
     margin-top: 6px;
 }
+
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -164,8 +165,6 @@ position: absolute;
     text-underline-offset: 10px;
 }
 
-
-
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -176,9 +175,6 @@ position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.home {
     background-image: url("../img/background.png");
     background-size: cover;
     position: relative;
@@ -192,7 +188,6 @@ position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(57, 55, 55, 0.503);
-    /* background-color: rgba(43, 41, 41, 0.645);  */
 }
 
 .home-content {
@@ -205,7 +200,6 @@ position: absolute;
     font-size: 3.2rem;
     font-weight: 700;
 }
-
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
@@ -227,8 +221,6 @@ span {
     mix-blend-mode: multiply;
     margin-left: 6px;
 }
-
-
 
 .home-content-p {
     text-align: center;
@@ -288,58 +280,42 @@ span {
     box-shadow: none;
 }
 
+
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: var(--snd-bg-color);
-    padding: 60px 0px 60px 0px;
+    background: var(--snd-bg-color);
 }
 
 .about-img img {
     width: 35vw;
 }
 
+
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-
-.fa-solid fa-globe{
-    justify-content: center;
-}
-
 .about-content h2 {
-    text-align: center;
+    text-align: right;
     line-height: 1.2;
-    font-size: 46px;
-    margin-top: -5px;
 }
 
-
+.about-content h3 {
+    font-size: 2.6rem;
+}
 
 .about-content p {
     font-size: 22px;
     text-align: start;
-    margin: 2.5rem;
 }
 
-.about-text {
-    text-align: start;
-    color: var(--e-global-color-accent);
-    font-family: "Assistant", assistant;
-    font-size: 20px;
-    font-weight: 500;
-     padding: 0px 150px 0px 150px;
-}
-
-#about-logo{
-    width: 60px;
-    height: 60px;
-    margin-right: 48%;
-    margin-top: 15px;
+.fa-solid fa-globe{
+    justify-content: center;
 }
 
 #services-h2 {
@@ -663,10 +639,10 @@ span {
     font-size: 1.8rem;
     margin-left: -2.7px;
 }
-/* 
+
 .tools {
     min-height: 200px;
-    background: var(--snd-bg-color);
+display: none;
     max-width: 100%;
     font-size: 1.4rem;
     display: flex;
@@ -683,15 +659,15 @@ span {
 
 .tools .inline-flex {
     display: inline-flex;
-    animation-duration: 25s;
+    /* animation-duration: 25s; */
     gap: 40px;
     padding-right: 40px;
     animation: infiniteSlideLeft 25s linear infinite;
   
-} */
+}
 
 
-/* .tools .shrink-0 {
+.tools .shrink-0 {
     flex-shrink: 0;
 }
 
@@ -703,9 +679,9 @@ span {
 
 .tools .halfSlide .tool img:hover {
     transform: scale(1.1, 1.1);
-} */
+}
 
-/* @keyframes infiniteSlideLeft {
+@keyframes infiniteSlideLeft {
     0% {
         transform: translateX(0);
     }
@@ -713,7 +689,8 @@ span {
     100% {
         transform: translateX(-100%);
     }
-} */
+}
+
 
 
 .contact h2 {
@@ -940,9 +917,7 @@ span {
     }
 
     .about {
-        flex-direction: column-reverse;
-        padding: 60px 0px 60px 0px;
-   background-color: var(--snd-bg-color);
+        flex-direction: column;
     }
 
     .about-img img{
@@ -974,15 +949,12 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
-    .home-img img {
-        width: 80vw;
-        margin-top: 8rem;
-    }
 
     .about-img img{
         width: 100vw;
         margin-top: 4rem;
     }
+    
     .logo-header {
         color: var(--text-color);
         font-weight: 700;
@@ -1018,7 +990,7 @@ span {
             font-size: 22px;
         }
         #header-name {
-  display: none;
+            font-size: large;
         }
         .header-p-title {
             font-size: 80px;
@@ -1201,6 +1173,26 @@ span {
         font-size: 1.2rem; /* גודל טקסט קריא */
         margin: 0;
       }
+      .bcZiba {
+        font-size: 28px !important;
+      }
+      #about-btn {
+        margin-right: 84px;
+    }
+    #about-h2 {
+        text-align: center !important;
+    }
+    .about-content h3 {
+        display: none;
+    }
+    .about-content p {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: start;
+        margin: 2.5rem;
+        margin-block-start: 0;
+        margin-block-end: .9rem;
+    }
 }
 
 @media (max-width: 450px) {
