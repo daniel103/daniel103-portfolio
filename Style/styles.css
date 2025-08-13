@@ -642,11 +642,11 @@ span {
 
 .tools {
     min-height: 200px;
-display: none;
     max-width: 100%;
     font-size: 1.4rem;
     display: flex;
     overflow-x: hidden;
+    direction: ltr !important;
 }
 
 .tools .halfSlide {
@@ -690,8 +690,6 @@ display: none;
         transform: translateX(-100%);
     }
 }
-
-
 
 .contact h2 {
     margin-bottom: 3rem;
