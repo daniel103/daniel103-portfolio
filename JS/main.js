@@ -61,3 +61,32 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
+const form = document.getElementById('contactForm');
+const privacyCheck = document.getElementById('privacyCheck');
+const errorMessage = document.getElementById('errorMessage');
+
+// Validate checkbox on form submit
+form.addEventListener('submit', function(e) {
+    if (!privacyCheck.checked) {
+        e.preventDefault();
+        errorMessage.classList.add('show');
+        privacyCheck.focus();
+        
+        // Remove error message after 3 seconds
+        setTimeout(() => {
+            errorMessage.classList.remove('show');
+        }, 3000);
+    }
+});
+
+// Remove error message when checkbox is checked
+privacyCheck.addEventListener('change', function() {
+    if (this.checked) {
+        errorMessage.classList.remove('show');
+    }
+});
+
+// Prevent link from submitting form
+document.querySelector('.privacy-checkbox a').addEventListener('click', function(e) {
+    e.stopPropagation();
+});

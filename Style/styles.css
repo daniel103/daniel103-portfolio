@@ -733,6 +733,58 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
+/* Privacy Checkbox Styles */
+.privacy-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.privacy-checkbox input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    accent-color: var(--main-color);
+    flex-shrink: 0;
+}
+
+.privacy-checkbox label {
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: default;  /* 👈 שינוי מ-pointer ל-default */
+    user-select: none;
+    line-height: 1.6;
+}
+
+.privacy-checkbox a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    cursor: pointer;  /* 👈 רק הקישור יהיה pointer */
+}
+
+.privacy-checkbox a:hover {
+    color: #0052a3;
+}
+
+/* Error message for checkbox */
+.error-message {
+    color: #ff4444;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    display: none;
+    text-align: center;
+}
+
+.error-message.show {
+    display: block;
+}
 
 
 .footer {
@@ -940,6 +992,20 @@ span {
 
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .privacy-checkbox {
+        width: 90%;
+        flex-direction: row;
+        gap: 0.8rem;
+    }
+
+    .privacy-checkbox label {
+        font-size: 1.2rem;
+    }
+
+    .privacy-checkbox input[type="checkbox"] {
+        width: 1.8rem;
+        height: 1.8rem;
     }
 }
 
@@ -1190,6 +1256,18 @@ span {
         margin: 2.5rem;
         margin-block-start: 0;
         margin-block-end: .9rem;
+    }
+    .privacy-checkbox {
+        width: 100%;
+    }
+
+    .privacy-checkbox label {
+        font-size: 1.1rem;
+    }
+
+    .privacy-checkbox input[type="checkbox"] {
+        width: 1.6rem;
+        height: 1.6rem;
     }
 }
 
