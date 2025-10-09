@@ -1000,7 +1000,7 @@ span {
     }
 
     .privacy-checkbox label {
-        font-size: 1.2rem;
+        font-size: 12px;
     }
 
     .privacy-checkbox input[type="checkbox"] {
@@ -1262,7 +1262,7 @@ span {
     }
 
     .privacy-checkbox label {
-        font-size: 1.1rem;
+        font-size: 12px;
     }
 
     .privacy-checkbox input[type="checkbox"] {
