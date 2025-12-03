@@ -1,0 +1,21 @@
+# StepUp Digital — מפת תוכן (LLMs Content Map)
+> StepUp Digital מספקת שירותי פיתוח אתרים לעסקים, כולל תכנון, עיצוב, פיתוח נקי ומהיר והתאמה לצרכים עסקיים.
+> אתר זה הוא Single-Page ולכן כל התוכן המרכזי נמצא בעמוד הבית.
+
+Last-Updated: 2025-12-03
+User-Agent: *
+
+## עמוד ראשי
+- https://stepupdigital.co.il/  
+  דף ראשי המכיל הצגת שירותים, הצעות ערך (USP), פרויקטים, אודות ויצירת קשר.
+
+## חלקי הדף (עוגנים רלוונטיים אם קיימים)
+- https://stepupdigital.co.il/# — הצהרת ערך ראשית וקריאה לפעולה.
+- https://stepupdigital.co.il/#services — סקירת שירותי בניית אתרים ותהליכי עבודה.
+- https://stepupdigital.co.il/#portfolio — תיק עבודות / דוגמאות.
+- https://stepupdigital.co.il/#about — על העסק / מי אנחנו.
+- https://stepupdigital.co.il/#contact — יצירת קשר / טופס / פרטים.
+
+## קישורים נוספים (אם קיימים באתר)
+- https://stepupdigital.co.il/PrivacyPolicy-StepUp.pdf — מדיניות פרטיות.
+- Sitemap: https://stepupdigital.co.il/sitemap.xml

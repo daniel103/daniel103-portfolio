@@ -2,3 +2,13 @@ User-agent: *
 Allow: /
 
 Sitemap: https://stepupdigital.co.il/sitemap.xml
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ChatGPTBot
+Allow: /
+

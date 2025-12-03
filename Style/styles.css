@@ -26,7 +26,6 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-     direction: rtl;
      margin: 0;
 }
 
@@ -38,6 +37,7 @@ section {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 16rem 7.7rem 16rem 7.7rem;
+    direction: rtl;
     /* padding: 15rem 5% 10rem 5%; */
 }
 
@@ -306,7 +306,7 @@ span {
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 
 .about-content p {
@@ -1247,7 +1247,10 @@ span {
         text-align: center !important;
     }
     .about-content h3 {
-        display: none;
+        display: block;
+        margin-top: 3px;
+    font-size: 2.1rem;
+    text-align: center;
     }
     .about-content p {
         font-size: 15px;
