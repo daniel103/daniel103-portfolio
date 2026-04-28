@@ -367,9 +367,7 @@
                     <input type="email" name="email" placeholder="מייל" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     <input type="text" name="phone" placeholder="טלפון" pattern="^\d{3}-\d{7}$|^\d{10}$" required>
                     <textarea class="textarea" name="message" rows="8" placeholder="הודעה"></textarea>
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 </div> 
-                <!-- Privacy Policy Checkbox -->
                 <div class="privacy-checkbox">
                     <input type="checkbox" id="privacyCheck" name="privacy_agreement" required>
                     <label for="privacyCheck">
@@ -380,6 +378,8 @@
                     יש לאשר את מדיניות הפרטיות לפני השליחה
                 </div>
             </div>
+            <!-- Privacy Policy Checkbox -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 <button type="submit" class="btn" id="contact-btn">שליחה</button>
             </form>
             <div class="home-content">
