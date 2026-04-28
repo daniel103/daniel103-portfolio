@@ -90,3 +90,26 @@ privacyCheck.addEventListener('change', function() {
 document.querySelector('.privacy-checkbox a').addEventListener('click', function(e) {
     e.stopPropagation();
 });
+
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    });
+
+    const result = await response.json();
+    
+    if (result.success) {
+        window.location.href = 'https://thankyoufordetils.netlify.app/';
+    }
+});
