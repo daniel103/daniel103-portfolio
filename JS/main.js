@@ -129,7 +129,7 @@ document.getElementById('contact-btn').addEventListener('click', async function(
         if (result.success) {
             window.location.href = 'https://thankyoufordetils.netlify.app/';
         } else {
-            alert('שגיאה בשליחה, נסה שוב');
+            alert(JSON.stringify(result));
         }
     } catch (error) {
         alert('שגיאה בשליחה, נסה שוב');
