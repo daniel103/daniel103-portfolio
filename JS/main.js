@@ -96,13 +96,11 @@ document.getElementById('contact-btn').addEventListener('click', async function(
     
     const form = document.getElementById('contactForm');
     
-    // בדיקת validation
     if (!form.checkValidity()) {
         form.reportValidity();
         return;
     }
 
-    // בדיקת checkbox
     const checkbox = document.getElementById('privacyCheck');
     if (!checkbox.checked) {
         document.getElementById('errorMessage').classList.add('show');
@@ -113,6 +111,7 @@ document.getElementById('contact-btn').addEventListener('click', async function(
     
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
+    object['access_key'] = 'a9ddea62-8e21-48b4-98cc-6af72ec6f22b';
     const json = JSON.stringify(object);
 
     try {
