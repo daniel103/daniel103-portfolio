@@ -96,27 +96,43 @@ document.getElementById('contact-btn').addEventListener('click', async function(
     
     const form = document.getElementById('contactForm');
     
+    // בדיקת validation
     if (!form.checkValidity()) {
         form.reportValidity();
         return;
+    }
+
+    // בדיקת checkbox
+    const checkbox = document.getElementById('privacyCheck');
+    if (!checkbox.checked) {
+        document.getElementById('errorMessage').classList.add('show');
+        return;
+    } else {
+        document.getElementById('errorMessage').classList.remove('show');
     }
     
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: json
-    });
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        });
 
-    const result = await response.json();
-    
-    if (result.success) {
-        window.location.href = 'https://thankyoufordetils.netlify.app/';
+        const result = await response.json();
+        
+        if (result.success) {
+            window.location.href = 'https://thankyoufordetils.netlify.app/';
+        } else {
+            alert('שגיאה בשליחה, נסה שוב');
+        }
+    } catch (error) {
+        alert('שגיאה בשליחה, נסה שוב');
     }
 });
