@@ -91,10 +91,17 @@ document.querySelector('.privacy-checkbox a').addEventListener('click', function
     e.stopPropagation();
 });
 
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+document.getElementById('contact-btn').addEventListener('click', async function(e) {
     e.preventDefault();
     
-    const formData = new FormData(this);
+    const form = document.getElementById('contactForm');
+    
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+    
+    const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
